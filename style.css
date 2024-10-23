@@ -1,5 +1,10 @@
 html {
-        font-family: sans-serif;
+        font-family: 'Arial', sans-serif;
+        background: linear-gradient(to right, #ff7e5f, #feb47b);
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
 
       body {
@@ -7,13 +12,51 @@ html {
         max-width: 800px;
         min-width: 480px;
         margin: 0 auto;
-      }
-      
-      .formulario input[type="number"] {
-        width: 200px;
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
       }
 
-      .ultimoResultado {
-        color: white;
-        padding: 3px;
-      }
+h1 {
+   text-align: center;
+   font-size: 2.5em;
+   color: #333;
+   margin-bottom: 20px;
+}
+
+.formulario {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}      
+        
+.formulario input[type="number"] {
+        width: 200px;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        font-size: 1.1em;
+}
+
+.formulario input[type="submit"] {
+   padding: 10px 20px;
+   background-color: #28a745;
+   color: white;
+   border: none;
+   border-radius: 5px;
+   font-size: 1.1em;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+}
+
+.formulario input[type="submit"]:hover {
+  background-color: #218838;
+}
+
+
+.ultimoResultado {
+ color: white;
+ padding: 3px;
+  }
